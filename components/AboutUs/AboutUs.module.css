@@ -1,0 +1,186 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: radial-gradient(circle at 117% 50%, #212c30 6%, #01080C 40%)
+}
+
+.peopleSaying{
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    max-width: 24rem;
+    font-size: 2.5rem;
+}
+.para{
+    font-size: 13px;
+    margin: 0;
+    max-width: 18rem;
+}
+
+.aboutUsCards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 13rem;
+    margin: 1rem;
+    height: 15rem;
+}
+.card:hover{
+    background: linear-gradient(to bottom right, rgb(32, 32, 39) 90%, rgb(29, 28, 28));
+    border-radius: 10px;
+    padding: 1rem;
+}
+.cardpara{
+    font-size: 13px;
+}
+.avatarContainer{
+    display: flex;
+    align-items: center;
+}
+
+.avatarImageContainer{
+    max-width: 40px;
+    max-height: 40px;
+    margin-right: 0.6rem;
+}
+.avatarImageContainer img{
+    width: 100%;
+    height: 100%;
+}
+.avatarInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.avatarpara{
+    font-size: 13px;
+    margin: 0;
+}
+
+
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 2rem 0;
+}
+
+.brand{
+    width: 135px;
+    height: 55px;
+}
+.brand img{
+    width: 100%;
+    height: 100%;
+}
+
+.btn{
+    width: max-content;
+    padding: 0.6rem;
+    background-color: rgb(87, 207, 207);
+    color: black;
+    border: none;
+    outline: none;
+    margin: 0.4rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.tryOurService{
+    display: flex;
+    background: linear-gradient(to top right, rgb(24 24 28) 42%, rgb(86 83 83));
+    width: 50rem;
+    height: 12rem;
+    border-radius: 17px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.ourServiceLeftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 24rem;
+}
+
+@media screen and (max-width:920px){
+    .peopleSaying{
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+    .tryOurService{
+        width: 40rem;
+    }
+
+    .brand{
+        width: 100px;
+        height: 45px;
+        margin: 0 1rem;
+    }
+}
+
+@media screen and (max-width:725px){
+    .peopleSaying{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .brands{
+        flex-wrap: wrap;
+    }
+
+    .aboutUsCards{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tryOurService{
+        width: max-content;
+    }
+    .serviceHeading{
+        font-size: 1.5rem;
+    }
+    .servicePara{
+        font-size: 13px;
+    }
+    .ourServiceLeftSide{
+        max-width: 20rem;
+        padding: 1rem;
+    }
+    .btn{
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width:455px){
+    .tryOurService{
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .btn{
+        margin-bottom: 2rem;
+    }
+}

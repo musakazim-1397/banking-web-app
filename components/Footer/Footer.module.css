@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.logoSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 18rem;
+}
+
+.socialSection{
+    display: flex;
+    justify-content: space-around;
+    max-width: 30rem;
+}
+
+.usefulLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 1.2rem;
+}
+
+.linksPara{
+    font-size: 13px;
+    margin: 0.3rem 0;
+    color: grey;
+}
+@media screen and (max-width: 830px) {
+    .footer{
+        flex-direction: column;
+    }
+}

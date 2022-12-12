@@ -1,0 +1,68 @@
+.navContainer{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    background:-moz-linear-gradient(90deg, rgba(4, 11, 16, 1) 52%, rgba(66, 62, 62, 1) 100%); 
+    background:-webkit-linear-gradient(90deg, rgba(4, 11, 16, 1) 52%, rgba(66, 62, 62, 1) 100%);
+    background:-o-linear-gradient(90deg, rgba(4, 11, 16, 1) 52%, rgba(66, 62, 62, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#423E3E', endColorstr='#040B10', GradientType=0 );
+    background:-ms-linear-gradient(90deg, rgba(4, 11, 16, 1) 52%, rgba(66, 62, 62, 1) 100%);
+    background:linear-gradient(90deg, rgba(4, 11, 16, 1) 52%, rgba(66, 62, 62, 1) 100%);
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 6rem;
+    position: relative;
+}
+.logoContainer{
+    margin-left: 5rem;
+}
+.navLink{
+    margin-right: 2rem;
+}
+.navLink:last-child{
+    margin-right: 0;
+}
+.menuIconContainer{
+    display: none;
+}
+
+.menuContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: max-content;
+    background-color: #393e3e;
+    top: 2.6rem;
+    right: 0.3rem;
+}
+
+.menuLink{
+    font-size: 1rem;
+    padding:0.3rem;
+    border-bottom: 1px solid;
+}
+
+@media screen and (max-width:900px) {
+    .navLinks{
+        margin-right: 2rem;
+    }
+    .logoContainer{
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .menuIconContainer{
+        display:flex;
+    }
+    .navLink{
+        display: none;
+    }
+}

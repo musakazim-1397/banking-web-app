@@ -1,0 +1,111 @@
+.heroContainer{
+    display: flex;
+    background-color: #01080c;
+    justify-content: space-around;
+    align-items: center;
+
+    background:-moz-radial-gradient(circle at 0% 50%, #192a32 2%, #01080C 14%);
+    background:-webkit-radial-gradient(circle at 0% 50%, #192a32 2%, #01080C 14%);
+    background:-o-radial-gradient(circle at 0% 50%, #192a32 2%, #01080C 14%);
+    background:-ms-radial-gradient(circle at 0% 50%, #192a32 2%, #01080C 14%);
+    background:radial-gradient(circle at 0% 50%, #192a32 2%, #01080C 14%);
+}
+
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    margin-left: 11rem;
+    position: relative;
+}
+
+.leftTopPara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.63);
+    padding: 0.2rem;
+    max-width: max-content;
+}
+
+.leftHeadings{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 1;
+    font-size: 2.1rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    
+}
+.leftHeadings h1{
+    z-index: 2;
+}
+
+.leftHeadings h1{
+    margin: 0;
+}
+
+.leftLowerPara{
+    font-size: 14px;
+    max-width: 20rem;;
+    color: grey;
+}
+
+.rightContainer{
+    margin: 2rem 0;
+    margin-left: auto;
+    position: relative;
+    background:-moz-radial-gradient(circle at 60% 35%, #305564 4%, #01080C 61%);
+    background:-webkit-radial-gradient(circle at 60% 35%, #305564 4%, #01080C 61%);
+    background:-o-radial-gradient(circle at 60% 35%, #305564 4%, #01080C 61%);
+    background:-ms-radial-gradient(circle at 60% 35%, #305564 4%, #01080C 61%);
+    background:radial-gradient(circle at 60% 35%, #305564 4%, #01080C 61%);
+}
+
+.gradientText{
+    background: -webkit-linear-gradient(left, #2fc9dd 50%, #D9D1D1 61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width:1070px){
+    .leftHeadings{
+        font-size: 1.8rem;
+    }
+    .leftContainer{
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (max-width:850px){
+    .leftContainer{
+        margin-left: 2rem;
+    }
+    .leftHeadings{
+        font-size: 1.4rem;
+    }
+    .leftTopPara{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .heroContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(circle at -95% 28%, #305564 4%, #01080C 61%);
+    }
+    .leftContainer{
+        margin: 0;
+        margin-top: 4rem;
+    }
+    .rightContainer{
+        margin: 4rem 0;
+        background:none ;
+    }
+}
